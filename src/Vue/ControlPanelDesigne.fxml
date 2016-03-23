@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <stylesheets>
+      <URL value="@textAreaStyle.css" />
+      <URL value="@chartStyle.css" />
+      <URL value="@tabPaneStyle.css" />
+   </stylesheets>
+   <children>
+      <Pane fx:id="pane" layoutX="1174.0" layoutY="137.0" prefHeight="100.0" prefWidth="158.0" />
+      <Group fx:id="MFD" layoutX="250.0" layoutY="18.0">
+         <children>
+            <Pane fx:id="EICAS" layoutX="3.0" layoutY="93.0" prefHeight="547.0" prefWidth="720.0" style="-fx-border-color: lime; -fx-border-radius: 43; -fx-background-color: black; -fx-background-radius: 43;">
+               <children>
+                  <Pane layoutX="46.0" layoutY="366.0" prefHeight="130.0" prefWidth="200.0" style="-fx-border-color: white;">
+                     <children>
+                        <Label layoutX="8.0" layoutY="17.0" text="#1 ENGINE ANTI-ICE ON" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="9.0" layoutY="37.0" text="#2 ENGINE ANTI-ICE ON" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="7.0" layoutY="57.0" text="ECS HI PRESS" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="8.0" layoutY="76.0" text="BACK UP PUMP ON" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="8.0" layoutY="94.0" text="BACK UP PUMP ON" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="Engine1" layoutX="135.0" layoutY="44.0" prefHeight="187.0" prefWidth="150.0">
+                     <children>
+                        <ProgressBar layoutX="-36.79290771484375" layoutY="109.0" prefHeight="17.0" prefWidth="130.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <Line fx:id="v11" endX="140.0" fill="WHITE" layoutX="-69.79290771484375" layoutY="94.0" rotate="90.0" stroke="WHITE" />
+                        <ProgressBar layoutX="11.20709228515625" layoutY="109.0" prefHeight="17.0" prefWidth="130.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <ProgressBar layoutX="58.20709228515625" layoutY="109.0" prefHeight="17.0" prefWidth="130.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <Line fx:id="v111" endX="140.0" fill="WHITE" layoutX="79.20709228515625" layoutY="93.0" rotate="-90.0" stroke="WHITE" />
+                        <Line fx:id="hm11" endX="113.0" fill="WHITE" layoutX="19.20709228515625" layoutY="186.0" stroke="WHITE" />
+                        <Line fx:id="hm111" endX="18.0" endY="22.0" fill="WHITE" layoutX="1.0" layoutY="163.7928924560547" stroke="WHITE" />
+                        <Line fx:id="hm1111" endX="-16.0" endY="22.0" fill="WHITE" layoutX="149.0" layoutY="163.7928924560547" stroke="WHITE" />
+                        <Line fx:id="hm1112" endX="17.0" endY="-22.0" fill="WHITE" layoutX="1.0" layoutY="22.792892456054688" stroke="WHITE" />
+                        <Line fx:id="hm112" endX="113.0" fill="WHITE" layoutX="18.20709228515625" stroke="WHITE" />
+                        <Line fx:id="hm11121" endX="-17.0" endY="-22.0" fill="WHITE" layoutX="149.0" layoutY="22.0" stroke="WHITE" />
+                        <Label layoutX="55.0" layoutY="14.0" text="TOTAL" textFill="LIME">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="Engine2" layoutX="286.0" layoutY="44.0" prefHeight="187.0" prefWidth="150.0">
+                     <children>
+                        <ProgressBar layoutX="-36.79290771484375" layoutY="109.0" prefHeight="17.0" prefWidth="130.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <Line fx:id="v111" endX="140.0" fill="WHITE" layoutX="-69.79290771484375" layoutY="94.0" rotate="90.0" stroke="WHITE" />
+                        <ProgressBar layoutX="11.20709228515625" layoutY="109.0" prefHeight="17.0" prefWidth="130.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <ProgressBar layoutX="58.20709228515625" layoutY="109.0" prefHeight="17.0" prefWidth="130.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <Line fx:id="v1113" endX="140.0" fill="WHITE" layoutX="79.20709228515625" layoutY="93.0" rotate="-90.0" stroke="WHITE" />
+                        <Line fx:id="hm111" endX="113.0" fill="WHITE" layoutX="19.20709228515625" layoutY="186.0" stroke="WHITE" />
+                        <Line fx:id="hm1111" endX="18.0" endY="22.0" fill="WHITE" layoutX="1.0" layoutY="163.7928924560547" stroke="WHITE" />
+                        <Line fx:id="hm11113" endX="-16.0" endY="22.0" fill="WHITE" layoutX="149.0" layoutY="163.7928924560547" stroke="WHITE" />
+                        <Line fx:id="hm11121" endX="17.0" endY="-22.0" fill="WHITE" layoutX="1.0" layoutY="22.792892456054688" stroke="WHITE" />
+                        <Line fx:id="hm1123" endX="113.0" fill="WHITE" layoutX="18.20709228515625" stroke="WHITE" />
+                        <Line fx:id="hm111213" endX="-17.0" endY="-22.0" fill="WHITE" layoutX="149.0" layoutY="22.0" stroke="WHITE" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="Engine3" layoutX="437.0" layoutY="44.0" prefHeight="187.0" prefWidth="150.0">
+                     <children>
+                        <ProgressBar layoutX="-36.79290771484375" layoutY="109.0" prefHeight="17.0" prefWidth="130.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <Line fx:id="v111" endX="140.0" fill="WHITE" layoutX="-69.79290771484375" layoutY="94.0" rotate="90.0" stroke="WHITE" />
+                        <ProgressBar layoutX="11.20709228515625" layoutY="109.0" prefHeight="17.0" prefWidth="130.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <ProgressBar layoutX="58.20709228515625" layoutY="109.0" prefHeight="17.0" prefWidth="130.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <Line fx:id="v1114" endX="140.0" fill="WHITE" layoutX="79.20709228515625" layoutY="93.0" rotate="-90.0" stroke="WHITE" />
+                        <Line fx:id="hm111" endX="113.0" fill="WHITE" layoutX="19.20709228515625" layoutY="186.0" stroke="WHITE" />
+                        <Line fx:id="hm1111" endX="18.0" endY="22.0" fill="WHITE" layoutX="1.0" layoutY="163.7928924560547" stroke="WHITE" />
+                        <Line fx:id="hm11114" endX="-16.0" endY="22.0" fill="WHITE" layoutX="149.0" layoutY="163.7928924560547" stroke="WHITE" />
+                        <Line fx:id="hm11121" endX="17.0" endY="-22.0" fill="WHITE" layoutX="1.0" layoutY="22.792892456054688" stroke="WHITE" />
+                        <Line fx:id="hm1124" endX="113.0" fill="WHITE" layoutX="18.20709228515625" stroke="WHITE" />
+                        <Line fx:id="hm111214" endX="-17.0" endY="-22.0" fill="WHITE" layoutX="149.0" layoutY="22.0" stroke="WHITE" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="Engine4" layoutX="30.0" layoutY="45.0" prefHeight="187.0" prefWidth="105.0">
+                     <children>
+                        <ProgressBar layoutX="-36.79290771484375" layoutY="109.0" prefHeight="17.0" prefWidth="130.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <Line fx:id="v111" endX="140.0" fill="WHITE" layoutX="-69.79290771484375" layoutY="94.0" rotate="90.0" stroke="WHITE" />
+                        <ProgressBar layoutX="11.20709228515625" layoutY="109.0" prefHeight="17.0" prefWidth="130.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <Line fx:id="v1115" endX="140.0" fill="WHITE" layoutX="33.20709228515625" layoutY="93.0" rotate="-90.0" stroke="WHITE" />
+                        <Line fx:id="hm111" endX="67.0" fill="WHITE" layoutX="19.20709228515625" layoutY="186.0" stroke="WHITE" />
+                        <Line fx:id="hm1111" endX="18.0" endY="22.0" fill="WHITE" layoutX="1.0" layoutY="163.7928924560547" stroke="WHITE" />
+                        <Line fx:id="hm11115" endX="-16.0" endY="22.0" fill="WHITE" layoutX="103.0" layoutY="163.7928924560547" stroke="WHITE" />
+                        <Line fx:id="hm11121" endX="17.0" endY="-22.0" fill="WHITE" layoutX="1.0" layoutY="22.792892456054688" stroke="WHITE" />
+                        <Line fx:id="hm1122" endX="67.0" fill="WHITE" layoutX="18.20709228515625" stroke="WHITE" />
+                        <Line fx:id="hm111215" endX="-17.0" endY="-22.0" fill="WHITE" layoutX="103.0" layoutY="22.0" stroke="WHITE" />
+                        <Label layoutX="31.0" layoutY="16.0" text="TOTAL" textFill="LIME">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="Engine5" layoutX="588.0" layoutY="44.0" prefHeight="187.0" prefWidth="105.0">
+                     <children>
+                        <ProgressBar layoutX="-36.79290771484375" layoutY="109.0" prefHeight="17.0" prefWidth="130.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <Line fx:id="v1115" endX="140.0" fill="WHITE" layoutX="-69.79290771484375" layoutY="94.0" rotate="90.0" stroke="WHITE" />
+                        <ProgressBar layoutX="11.20709228515625" layoutY="109.0" prefHeight="17.0" prefWidth="130.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <Line fx:id="v11151" endX="140.0" fill="WHITE" layoutX="33.20709228515625" layoutY="93.0" rotate="-90.0" stroke="WHITE" />
+                        <Line fx:id="hm1111" endX="67.0" fill="WHITE" layoutX="19.20709228515625" layoutY="186.0" stroke="WHITE" />
+                        <Line fx:id="hm11115" endX="18.0" endY="22.0" fill="WHITE" layoutX="1.0" layoutY="163.7928924560547" stroke="WHITE" />
+                        <Line fx:id="hm111151" endX="-16.0" endY="22.0" fill="WHITE" layoutX="103.0" layoutY="163.7928924560547" stroke="WHITE" />
+                        <Line fx:id="hm111215" endX="17.0" endY="-22.0" fill="WHITE" layoutX="1.0" layoutY="22.792892456054688" stroke="WHITE" />
+                        <Line fx:id="hm11221" endX="67.0" fill="WHITE" layoutX="18.20709228515625" stroke="WHITE" />
+                        <Line fx:id="hm1112151" endX="-17.0" endY="-22.0" fill="WHITE" layoutX="103.0" layoutY="22.0" stroke="WHITE" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="Engine6" layoutX="286.0" layoutY="225.0" prefHeight="109.0" prefWidth="150.0">
+                     <children>
+                        <Line fx:id="v1112" endX="52.0" fill="WHITE" layoutX="-25.79290771484375" layoutY="57.0" rotate="90.0" stroke="WHITE" />
+                        <ProgressBar layoutX="15.20709228515625" layoutY="51.0" prefHeight="17.0" prefWidth="90.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <ProgressBar layoutX="43.20709228515625" layoutY="51.0" prefHeight="17.0" prefWidth="90.0" progress="0.76" rotate="-90.0" stylesheets="@progressBar2.css" />
+                        <Line fx:id="hm1111" endX="113.0" fill="WHITE" layoutX="19.20709228515625" layoutY="106.0" stroke="WHITE" />
+                        <Line fx:id="hm11112" endX="18.0" endY="22.0" fill="WHITE" layoutX="1.0" layoutY="83.79289245605469" stroke="WHITE" />
+                        <Line fx:id="hm111131" endX="-16.0" endY="22.0" fill="WHITE" layoutX="149.0" layoutY="83.79289245605469" stroke="WHITE" />
+                        <Line fx:id="hm111212" endX="17.0" endY="-22.0" fill="WHITE" layoutX="1.0" layoutY="30.792892456054688" stroke="WHITE" />
+                        <Line fx:id="hm11231" endX="113.0" fill="WHITE" layoutX="18.20709228515625" layoutY="8.0" stroke="WHITE" />
+                        <Line fx:id="hm1112131" endX="-17.0" endY="-22.0" fill="WHITE" layoutX="149.0" layoutY="30.0" stroke="WHITE" />
+                        <Line fx:id="v11121" endX="52.0" fill="WHITE" layoutX="123.0" layoutY="57.0" rotate="90.0" stroke="WHITE" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="492.0" layoutY="366.0" prefHeight="130.0" prefWidth="200.0" style="-fx-border-color: yellow;">
+                     <children>
+                        <Label layoutX="6.0" layoutY="15.0" text="#1 FUEL FLT BYPASS" textFill="YELLOW">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="53.0" layoutX="256.0" layoutY="338.0" stroke="WHITE" strokeType="INSIDE" width="60.0" />
+                  <ProgressBar layoutX="298.0" layoutY="370.0" prefHeight="17.0" prefWidth="69.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                  <ProgressBar layoutX="356.0" layoutY="371.0" prefHeight="17.0" prefWidth="67.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                  <Label layoutX="346.0" layoutY="391.0" text="FUEL" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="37.0" layoutY="241.0" text="#1 FUEL FLT BYPASS" textFill="YELLOW">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="462.0" layoutY="240.0" text="#2 FUEL FLT BYPASS" textFill="YELLOW">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="462.0" layoutY="260.0" text="#1 FUEL FLT BYPASS" textFill="YELLOW">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Line fx:id="hm11232" endX="113.0" fill="WHITE" layoutX="297.0" layoutY="149.0" stroke="WHITE" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="53.0" layoutX="404.0" layoutY="338.0" stroke="WHITE" strokeType="INSIDE" width="60.0" />
+                  <Label layoutX="37.0" layoutY="264.0" text="#1 FUEL FLT BYPASS" textFill="YELLOW">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="40.0" layoutX="334.0" layoutY="419.0" stroke="WHITE" strokeType="INSIDE" width="55.0" />
+                  <Label layoutX="341.0" layoutY="417.0" text="TOTAL" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="ARMS" layoutX="3.0" layoutY="93.0" prefHeight="547.0" prefWidth="720.0" style="-fx-border-color: lime; -fx-border-radius: 43; -fx-background-color: black; -fx-background-radius: 43;">
+               <children>
+                  <Pane fx:id="pane3D" prefHeight="258.0" prefWidth="401.0" />
+                  <ImageView fitHeight="298.0" fitWidth="384.0" layoutX="276.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@UH.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" height="122.0" layoutX="47.0" layoutY="58.0" stroke="LIME" strokeType="INSIDE" width="141.0" />
+                  <Rectangle arcHeight="5.0" height="122.0" layoutX="47.0" layoutY="265.0" stroke="LIME" strokeType="INSIDE" width="141.0" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="708.0" fitWidth="846.0" layoutX="-57.0" layoutY="16.0" pickOnBounds="true">
+               <image>
+                  <Image url="@UH60MFD.jpg" />
+               </image>
+            </ImageView>
+            <Pane fx:id="MAP" layoutX="3.0" layoutY="93.0" prefHeight="547.0" prefWidth="720.0" style="-fx-border-color: lime; -fx-border-radius: 43; -fx-background-color: black; -fx-background-radius: 43;" visible="false" />
+            <Pane fx:id="MFD0" visible="false">
+               <children>
+                  <ImageView fitHeight="577.0" fitWidth="771.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@UH60MFD.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="EIFIS" layoutX="2.0" layoutY="93.0" prefHeight="547.0" prefWidth="720.0" style="-fx-background-color: black; -fx-border-radius: 43; -fx-background-radius: 43; -fx-border-color: lime;">
+               <children>
+                  <Label layoutX="459.0" layoutY="299.0" prefHeight="17.0" prefWidth="60.0" text="Altimeter" textFill="#66acc6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="459.0" layoutY="316.0" prefHeight="17.0" prefWidth="60.0" text="Altimeter" textFill="#66acc6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="460.0" layoutY="335.0" prefHeight="17.0" prefWidth="60.0" text="Altimeter" textFill="LIME">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="190.0" layoutY="517.0" prefHeight="17.0" prefWidth="36.0" text="EICAS" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="85.0" layoutY="516.0" prefHeight="21.0" prefWidth="47.0" text="EICAS" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="299.0" layoutY="517.0" prefHeight="21.0" prefWidth="47.0" text="EICAS" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="212.0" layoutY="16.0" prefHeight="17.0" prefWidth="36.0" text="IAS" textFill="LIME">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="115.0" layoutY="15.0" prefHeight="17.0" prefWidth="36.0" text="ALT" textFill="LIME">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="507.0" layoutY="517.0" prefHeight="17.0" prefWidth="36.0" text="MAP" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="533.0" layoutY="81.0" prefHeight="20.0" prefWidth="36.0" text="ALT" textFill="#ff5a00">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="474.0" layoutY="425.0" prefHeight="17.0" prefWidth="60.0" text="Altimeter" textFill="WHITE" />
+                  <Label layoutX="474.0" layoutY="406.0" prefHeight="17.0" prefWidth="60.0" text="POWER" textFill="WHITE" />
+                  <Label layoutX="474.0" layoutY="389.0" prefHeight="17.0" prefWidth="60.0" text="FMSI" textFill="WHITE" />
+                  <Label layoutX="474.0" layoutY="443.0" prefHeight="17.0" prefWidth="60.0" text="12.5 M" textFill="WHITE" />
+                  <ProgressBar layoutX="184.0" layoutY="394.0" prefHeight="3.0" prefWidth="70.0" progress="1.0" rotate="-90.0" stylesheets="@progressBar.css" />
+                  <ProgressBar layoutX="197.0" layoutY="394.0" prefHeight="1.0" prefWidth="70.0" progress="1.0" rotate="-90.0" stylesheets="@progressBar.css" />
+                  <Label layoutX="207.0" layoutY="445.0" prefHeight="17.0" prefWidth="60.0" text="2040" textFill="LIME">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="216.0" layoutY="331.0" prefHeight="17.0" prefWidth="27.0" text="PSI" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Line endX="22.0" endY="1.0" fill="WHITE" layoutX="214.0" layoutY="394.0" startX="1.0" startY="1.0" stroke="LIME" strokeWidth="3.0" />
+                  <Line endX="22.0" endY="1.0" fill="WHITE" layoutX="214.0" layoutY="406.0" startX="1.0" startY="1.0" stroke="LIME" strokeWidth="3.0" />
+                  <Pane fx:id="engineProgress" layoutX="50.0" layoutY="268.0" prefHeight="218.0" prefWidth="104.0">
+                     <children>
+                        <ProgressBar layoutX="-64.5" layoutY="132.5" prefHeight="17.0" prefWidth="150.0" progress="0.46" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <ProgressBar layoutX="18.5" layoutY="132.5" prefHeight="17.0" prefWidth="150.0" progress="0.55" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <ProgressBar layoutX="-24.5" layoutY="132.5" prefHeight="17.0" prefWidth="150.0" progress="0.63" rotate="-90.0" stylesheets="@progressBar.css" />
+                        <Label layoutX="37.0" prefHeight="27.0" prefWidth="36.0" text="100" textFill="LIME">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="41.0" prefHeight="27.0" prefWidth="27.0" text="99" textFill="LIME">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="83.0" layoutY="42.0" prefHeight="27.0" prefWidth="27.0" text="99" textFill="LIME">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Line fx:id="v1" endX="200.0" fill="WHITE" layoutX="-73.5" layoutY="116.5" rotate="-90.0" stroke="WHITE" />
+                        <Line fx:id="v2" endX="200.0" fill="WHITE" layoutX="-22.5" layoutY="116.5" rotate="-90.0" stroke="WHITE" />
+                        <Line fx:id="hl" endX="50.0" fill="WHITE" layoutX="26.5" layoutY="217.5" stroke="WHITE" />
+                        <Line fx:id="hm" endX="50.0" fill="WHITE" layoutX="26.5" layoutY="112.5" stroke="WHITE" />
+                        <Line fx:id="h1" endX="10.0" fill="WHITE" layoutX="27.5" layoutY="188.5" stroke="WHITE" />
+                        <Line fx:id="h2" endX="10.0" fill="WHITE" layoutX="67.5" layoutY="187.5" stroke="WHITE" />
+                        <Line fx:id="h3" endX="10.0" fill="WHITE" layoutX="26.5" layoutY="55.5" stroke="WHITE" />
+                        <Line fx:id="h4" endX="10.0" fill="WHITE" layoutX="66.5" layoutY="57.5" stroke="WHITE" />
+                        <Line fx:id="h5" endX="10.0" fill="WHITE" layoutX="27.5" layoutY="34.5" stroke="WHITE" />
+                        <Line fx:id="h6" endX="10.0" fill="WHITE" layoutX="65.5" layoutY="34.5" stroke="WHITE" />
+                        <Line fx:id="h7" endX="10.0" fill="WHITE" layoutX="67.5" layoutY="15.5" stroke="WHITE" />
+                        <Line fx:id="h8" endX="10.0" fill="WHITE" layoutX="26.5" layoutY="15.5" stroke="WHITE" />
+                     </children>
+                  </Pane>
+                  <Circle layoutX="135.0" layoutY="175.0" radius="90.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Arc layoutX="135.0" layoutY="175.0" length="58.0" radiusX="100.0" radiusY="100.0" startAngle="-90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <ImageView fitHeight="41.0" fitWidth="36.0" layoutX="342.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@planeMarker.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="568.0" layoutY="292.0" prefHeight="20.0" prefWidth="51.0" text="2192 f" textFill="LIME">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Group>
+      <Button fx:id="btn_active" layoutX="1184.0" layoutY="434.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="120.0" styleClass="chart-plot-background" text="Click here" textAlignment="CENTER" textFill="#2acf15">
+         <effect>
+            <DropShadow color="#d7211e" />
+         </effect>
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

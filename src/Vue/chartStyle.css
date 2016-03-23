@@ -1,0 +1,56 @@
+/* 
+    Copyright © 2012, Oracle and/or it’s affiliates. All rights reserved. 
+
+    Document   : eegchart
+    Created on : Sep 28, 2012, 6:59:55 PM
+    Author     : simonri
+    Description:
+        Stylesheet for the Neurosky MindWave graphing application
+*/
+
+.axis {
+  -fx-tick-label-fill: #ffffff;
+}
+
+.axis-tick-mark {
+    -fx-stroke: #ffffff;
+}
+
+.axis-minor-tick-mark {
+    -fx-stroke: #202020;
+}
+
+.chart-plot-background {
+  -fx-background-color: #000000;
+}
+
+.chart-alternative-row-fill {
+  -fx-fill: #000000;
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: #202020;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #202020;
+}
+
+.series0.chart-symbol { /* cross */
+    -fx-background-color: red;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-shape: "M2,0 L5,4 L8,0 L10,0 L10,2 L6,5 L10,8 L10,10 L8,10 L5,6 L2,10 L0,10 L0,8 L4,5 L0,2 L0,0 Z";
+}
+
+.series0.chart-series-line {
+    -fx-stroke: red;
+    -fx-stroke-width: 2px;
+}
+
+.series1.chart-series-line {
+    -fx-stroke: limegreen;
+    -fx-stroke-width: 2px;
+}
+
+
+
+
